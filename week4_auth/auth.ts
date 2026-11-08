@@ -129,3 +129,4 @@ export function setSessionCookie(res: Response, sessionId: string): void {
     maxAge: 3600 * 1000, // 1 hour expiration
   });
 }
+
