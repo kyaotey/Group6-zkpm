@@ -1,4 +1,9 @@
 node_modules
 dist
 .env
+*.exe
+*.pdb
+*.log
+build_log.txt
+test_output.txt
 
