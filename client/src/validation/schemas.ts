@@ -56,3 +56,4 @@ export const ShareItemSchema = z
 export type RegisterInput = z.infer<typeof RegisterSchema>;
 export type VaultItemInput = z.infer<typeof VaultItemSchema>;
 export type ShareItemInput = z.infer<typeof ShareItemSchema>;
+

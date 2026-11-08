@@ -43,3 +43,4 @@ export async function deleteVaultItem(userId: string, itemId: string) {
   const query = 'DELETE FROM vault_items WHERE user_id = $1 AND id = $2';
   return pool.query(query, [userId, itemId]);
 }
+
