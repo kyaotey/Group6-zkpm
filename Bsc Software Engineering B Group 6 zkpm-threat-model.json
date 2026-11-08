@@ -1,0 +1,1908 @@
+{
+  "version": "2.6.2",
+  "summary": {
+    "title": "Bsc Software Engineering B Group 6 zkpm-threat-model",
+    "owner": "Keith Tetteh Yaotey",
+    "description": "Project 6: Zero-Knowledge Password Manager — Week 1 threat model",
+    "id": 0
+  },
+  "detail": {
+    "contributors": [
+      {
+        "name": "Prince Lateef Abdul Rahman"
+      },
+      {
+        "name": "Bright Kportiklah"
+      },
+      {
+        "name": "Stedan Yaw Boah Ampofo"
+      },
+      {
+        "name": "Prince Opoku Owusu"
+      },
+      {
+        "name": "Cyril Prince Agbeve"
+      }
+    ],
+    "diagrams": [
+      {
+        "id": 0,
+        "title": "Project 6: Zero-Knowledge Password Manager — Week 1 threat model diagram",
+        "diagramType": "Generic",
+        "placeholder": "New generic diagram description",
+        "thumbnail": "./public/content/images/thumbnail.jpg",
+        "version": "2.6.2",
+        "cells": [
+          {
+            "position": {
+              "x": 620,
+              "y": 45
+            },
+            "size": {
+              "width": 230,
+              "height": 280
+            },
+            "attrs": {
+              "label": {
+                "text": "        TB-2: Application \n       Server Trust Zone"
+              }
+            },
+            "visible": true,
+            "shape": "trust-boundary-box",
+            "zIndex": -1,
+            "id": "a4807461-cdfb-472a-99c0-da33d61587a6",
+            "data": {
+              "type": "tm.BoundaryBox",
+              "name": "        TB-2: Application \n       Server Trust Zone",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false,
+              "crossingFlows": [
+                "ff345579-6dde-4db7-8e73-5cf1b817c4cd",
+                "6a6cdfa0-ad1d-4bc2-baec-e276b0a4bfb6",
+                "849c6ba0-8011-4274-96e9-d247c50a6a53",
+                "5ac6b9ca-cf9e-499c-8d30-c721de873a5a",
+                "78d6f574-ab07-492c-a378-bcb4f1b6c941",
+                "4de9f299-640b-40ae-b3d4-2e501bc5bdd2",
+                "b0bd0eb2-3d5a-4305-b53c-dd83b68eb322",
+                "5d284ab1-27e6-4d1c-b90f-b644cb3b850b",
+                "1e297446-3f0e-42a7-b7eb-ea9ba9bec9f4",
+                "6cdf23e9-dece-48e7-a09c-ff12d28fe801"
+              ],
+              "containedElements": [
+                "48feb73c-1cf3-47a9-a014-8db758800cbe"
+              ]
+            }
+          },
+          {
+            "position": {
+              "x": 1128.5,
+              "y": 295
+            },
+            "size": {
+              "width": 230,
+              "height": 180
+            },
+            "attrs": {
+              "label": {
+                "text": "TB-3: Database Trust Zone"
+              }
+            },
+            "visible": true,
+            "shape": "trust-boundary-box",
+            "zIndex": -1,
+            "id": "54c957e1-2c06-47cc-8776-19fed1ca3997",
+            "data": {
+              "type": "tm.BoundaryBox",
+              "name": "TB-3: Database Trust Zone",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false,
+              "crossingFlows": [
+                "6a6cdfa0-ad1d-4bc2-baec-e276b0a4bfb6"
+              ],
+              "containedElements": [
+                "b4965e3b-0a99-495a-96bb-634d0f8d7509"
+              ]
+            }
+          },
+          {
+            "position": {
+              "x": 1118.5,
+              "y": 15
+            },
+            "size": {
+              "width": 240,
+              "height": 150
+            },
+            "attrs": {
+              "label": {
+                "text": "TB-4: External API Boundary"
+              }
+            },
+            "visible": true,
+            "shape": "trust-boundary-box",
+            "zIndex": -1,
+            "id": "25ee9266-1785-4319-8cf9-a7283beba733",
+            "data": {
+              "type": "tm.BoundaryBox",
+              "name": "TB-4: External API Boundary",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false,
+              "crossingFlows": [
+                "f2368e1c-bb83-49d3-96ff-c95c364afa99"
+              ],
+              "containedElements": [
+                "1bc54918-eee1-4f52-acd1-bf6c6fe238c2"
+              ]
+            }
+          },
+          {
+            "position": {
+              "x": -24.999999999999886,
+              "y": -49.99999999999994
+            },
+            "size": {
+              "width": 260,
+              "height": 360
+            },
+            "attrs": {
+              "label": {
+                "text": "TB-1: Client Trust Zone"
+              }
+            },
+            "visible": true,
+            "shape": "trust-boundary-box",
+            "zIndex": -1,
+            "id": "900300c2-5c8e-4d4f-b76b-fd9d355a1d70",
+            "data": {
+              "type": "tm.BoundaryBox",
+              "name": "TB-1: Client Trust Zone",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false,
+              "crossingFlows": [
+                "ff345579-6dde-4db7-8e73-5cf1b817c4cd",
+                "849c6ba0-8011-4274-96e9-d247c50a6a53",
+                "f2368e1c-bb83-49d3-96ff-c95c364afa99",
+                "78d6f574-ab07-492c-a378-bcb4f1b6c941",
+                "4de9f299-640b-40ae-b3d4-2e501bc5bdd2",
+                "b0bd0eb2-3d5a-4305-b53c-dd83b68eb322",
+                "5d284ab1-27e6-4d1c-b90f-b644cb3b850b",
+                "1e297446-3f0e-42a7-b7eb-ea9ba9bec9f4",
+                "6cdf23e9-dece-48e7-a09c-ff12d28fe801"
+              ],
+              "containedElements": [
+                "418142c7-3c3a-4f27-ad49-5a27935eff85",
+                "d21412f5-5caa-47fe-9637-bc6694796dc9"
+              ]
+            }
+          },
+          {
+            "position": {
+              "x": 48.75,
+              "y": -15
+            },
+            "size": {
+              "width": 112.5,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "User"
+              },
+              "body": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "actor",
+            "zIndex": 1,
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "e2852d14-6bc6-4e63-8df6-50a7c7ebb356"
+                },
+                {
+                  "group": "right",
+                  "id": "443d386b-b43d-4825-9866-aa85b61a92dc"
+                },
+                {
+                  "group": "bottom",
+                  "id": "da73c8e5-c683-4d4e-a2d1-e42686a9c520"
+                },
+                {
+                  "group": "left",
+                  "id": "f7aac6d3-9a95-4eaa-8c1c-d94c46c56038"
+                }
+              ]
+            },
+            "id": "418142c7-3c3a-4f27-ad49-5a27935eff85",
+            "data": {
+              "type": "tm.Actor",
+              "name": "User",
+              "description": "",
+              "isTrustBoundary": false,
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "providesAuthentication": false,
+              "threats": [
+                {
+                  "id": "0f8b34ed-67a2-46eb-b6df-a05c62e387aa",
+                  "title": "T-20 Weak Master Password",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Elevation of privilege",
+                  "description": "The user chooses a weak master password, allowing an attacker to brute-force the Argon2id derivation and gain access to the entire vault.",
+                  "mitigation": "Enforce a strict password strength meter during registration and use high-memory Argon2id parameters.",
+                  "modelType": "default",
+                  "new": false,
+                  "number": 24,
+                  "score": ""
+                }
+              ]
+            }
+          },
+          {
+            "position": {
+              "x": 1172.5,
+              "y": 89.99999999999999
+            },
+            "size": {
+              "width": 140,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Have I Been Pwned \nAPI"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "actor",
+            "zIndex": 2,
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "e2852d14-6bc6-4e63-8df6-50a7c7ebb356"
+                },
+                {
+                  "group": "right",
+                  "id": "443d386b-b43d-4825-9866-aa85b61a92dc"
+                },
+                {
+                  "group": "bottom",
+                  "id": "da73c8e5-c683-4d4e-a2d1-e42686a9c520"
+                },
+                {
+                  "group": "left",
+                  "id": "f7aac6d3-9a95-4eaa-8c1c-d94c46c56038"
+                }
+              ]
+            },
+            "id": "1bc54918-eee1-4f52-acd1-bf6c6fe238c2",
+            "data": {
+              "type": "tm.Actor",
+              "name": "Have I Been Pwned \nAPI",
+              "description": "",
+              "isTrustBoundary": false,
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "providesAuthentication": false,
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 1033.5,
+              "y": 530
+            },
+            "size": {
+              "width": 140,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Emergency Contact"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "actor",
+            "zIndex": 3,
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "e2852d14-6bc6-4e63-8df6-50a7c7ebb356"
+                },
+                {
+                  "group": "right",
+                  "id": "443d386b-b43d-4825-9866-aa85b61a92dc"
+                },
+                {
+                  "group": "bottom",
+                  "id": "da73c8e5-c683-4d4e-a2d1-e42686a9c520"
+                },
+                {
+                  "group": "left",
+                  "id": "f7aac6d3-9a95-4eaa-8c1c-d94c46c56038"
+                }
+              ]
+            },
+            "id": "c657f955-57ac-46a6-ae05-a0f4b94541cf",
+            "data": {
+              "type": "tm.Actor",
+              "name": "Emergency Contact",
+              "description": "",
+              "isTrustBoundary": false,
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "providesAuthentication": false,
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 665,
+              "y": 165
+            },
+            "size": {
+              "width": 90,
+              "height": 90
+            },
+            "attrs": {
+              "text": {
+                "text": "Express \nServer"
+              },
+              "body": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "zIndex": 4,
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "bd3bdf64-a6a7-410c-96a3-f22a7a56974c"
+                },
+                {
+                  "group": "right",
+                  "id": "b59eee04-f79f-472f-9fa3-a6a0683a1214"
+                },
+                {
+                  "group": "bottom",
+                  "id": "3241a265-e38c-4f3c-b846-7199c8d31ee0"
+                },
+                {
+                  "group": "left",
+                  "id": "7a29bd1b-986f-4455-aaee-2dedcfeccee5"
+                }
+              ]
+            },
+            "id": "48feb73c-1cf3-47a9-a014-8db758800cbe",
+            "data": {
+              "type": "tm.Process",
+              "name": "Express \nServer",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "handlesCardPayment": false,
+              "handlesGoodsOrServices": false,
+              "isWebApplication": false,
+              "privilegeLevel": "",
+              "threats": [
+                {
+                  "id": "4f031bb5-a786-4319-bfb6-bec544ed1ed9",
+                  "title": "T-21 Server Dependency Exploit",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Elevation of privilege",
+                  "description": "An attacker exploits a known vulnerability in an unpatched Node.js or Express dependency to gain unauthorized control over the server process.",
+                  "mitigation": "Run npm audit in CI, keep dependencies updated, and run the server as a non-root user in Docker.",
+                  "modelType": "default",
+                  "new": false,
+                  "number": 25,
+                  "score": ""
+                }
+              ]
+            }
+          },
+          {
+            "position": {
+              "x": 60.000000000000114,
+              "y": 170
+            },
+            "size": {
+              "width": 90,
+              "height": 90
+            },
+            "attrs": {
+              "text": {
+                "text": "Browser \nExtension"
+              },
+              "body": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "zIndex": 5,
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "bd3bdf64-a6a7-410c-96a3-f22a7a56974c"
+                },
+                {
+                  "group": "right",
+                  "id": "b59eee04-f79f-472f-9fa3-a6a0683a1214"
+                },
+                {
+                  "group": "bottom",
+                  "id": "3241a265-e38c-4f3c-b846-7199c8d31ee0"
+                },
+                {
+                  "group": "left",
+                  "id": "7a29bd1b-986f-4455-aaee-2dedcfeccee5"
+                }
+              ]
+            },
+            "id": "d21412f5-5caa-47fe-9637-bc6694796dc9",
+            "data": {
+              "type": "tm.Process",
+              "name": "Browser \nExtension",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "handlesCardPayment": false,
+              "handlesGoodsOrServices": false,
+              "isWebApplication": false,
+              "privilegeLevel": "",
+              "threats": [
+                {
+                  "id": "ba9a8981-cb41-45db-9d1a-6d3a57d3f5c4",
+                  "title": "T-14 Phishing Through Browser Frame Impersonation",
+                  "status": "Open",
+                  "severity": "Critical",
+                  "type": "Elevation of privilege",
+                  "description": "An attacker creates a fraudulent webpage or embedded browser frame that imitates a trusted website, attempting to trick the password manager into automatically filling stored login credentials into an unauthorized website.",
+                  "mitigation": "Verify the exact website origin before automatically filling passwords, including the communication scheme, hostname, and port number. Reject unauthorized embedded frames and require additional user confirmation when necessary.",
+                  "modelType": "default",
+                  "new": false,
+                  "number": 23,
+                  "score": ""
+                }
+              ]
+            }
+          },
+          {
+            "position": {
+              "x": 1196.25,
+              "y": 355
+            },
+            "size": {
+              "width": 120,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "PostgreSQL \nDatabase"
+              },
+              "topLine": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "strokeDasharray": null
+              },
+              "bottomLine": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "store",
+            "zIndex": 6,
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "38390c4b-74ef-4664-b2d5-002a2684c553"
+                },
+                {
+                  "group": "right",
+                  "id": "69d7a7e0-bcea-4a2d-a724-ef4e338087dd"
+                },
+                {
+                  "group": "bottom",
+                  "id": "b51b5bda-7805-4a2c-b1b9-a17e21e14db6"
+                },
+                {
+                  "group": "left",
+                  "id": "9c668e31-6d06-4b94-b0a4-db243fccad6f"
+                }
+              ]
+            },
+            "id": "b4965e3b-0a99-495a-96bb-634d0f8d7509",
+            "data": {
+              "type": "tm.Store",
+              "name": "PostgreSQL \nDatabase",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isALog": false,
+              "isEncrypted": false,
+              "isSigned": false,
+              "storesCredentials": false,
+              "storesInventory": false,
+              "threats": [
+                {
+                  "id": "1522b24d-a188-44f3-b674-0b77c2bba2f3",
+                  "title": "T-22 Database Storage Exhaustion",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Denial of service",
+                  "description": "An attacker or buggy client fills the database with massive amounts of ciphertext, exhausting disk space and causing a system outage.",
+                  "mitigation": "Implement strict per-user storage quotas, maximum upload sizes, and database disk-space monitoring.",
+                  "modelType": "default",
+                  "new": false,
+                  "number": 26,
+                  "score": ""
+                }
+              ]
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "DF-4 — \nWrapped Encryption \nKey and Encrypted Vault Data",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "68b39d80-4485-4524-aa68-7f550849e9a6",
+                  "title": "T-12 Encrypted Vault Synchronization Flooding",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Denial of service",
+                  "description": "An attacker repeatedly uploads extremely large encrypted data files to the synchronization service, exhausting server storage, bandwidth, or processing resources.",
+                  "mitigation": "Enforce maximum request body sizes, user storage quotas, upload limits, and request rate limiting to prevent excessive resource consumption.",
+                  "modelType": "default",
+                  "new": false,
+                  "number": 17,
+                  "score": ""
+                }
+              ],
+              "trustBoundaryIds": [
+                "a4807461-cdfb-472a-99c0-da33d61587a6",
+                "900300c2-5c8e-4d4f-b76b-fd9d355a1d70"
+              ]
+            },
+            "labels": [
+              "DF-4 — \nWrapped Encryption \nKey and Encrypted Vault Data"
+            ],
+            "id": "ff345579-6dde-4db7-8e73-5cf1b817c4cd",
+            "source": {
+              "cell": "d21412f5-5caa-47fe-9637-bc6694796dc9",
+              "port": "b59eee04-f79f-472f-9fa3-a6a0683a1214"
+            },
+            "target": {
+              "cell": "48feb73c-1cf3-47a9-a014-8db758800cbe",
+              "port": "7a29bd1b-986f-4455-aaee-2dedcfeccee5"
+            },
+            "vertices": [
+              {
+                "x": 390,
+                "y": 150
+              },
+              {
+                "x": 580,
+                "y": 130
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "DF-1: Master password",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "1be34618-7fb8-4f87-8e02-a5f8e93d8a25",
+                  "title": "T-07 Master Password Theft",
+                  "status": "Open",
+                  "severity": "Critical",
+                  "type": "Information disclosure",
+                  "description": "A malicious script attempts to capture the user's master password when it is entered into the browser extension, potentially exposing access to the entire password vault.",
+                  "mitigation": "Use isolated execution environments provided by Manifest Version 3 browser extensions and enforce a strict Content Security Policy to reduce unauthorized script execution.",
+                  "modelType": "default",
+                  "new": false,
+                  "number": 12,
+                  "score": ""
+                }
+              ],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "DF-1: Master password"
+            ],
+            "id": "784ec9c9-5fcf-4d79-806e-1cdd956ee57e",
+            "source": {
+              "cell": "418142c7-3c3a-4f27-ad49-5a27935eff85",
+              "port": "da73c8e5-c683-4d4e-a2d1-e42686a9c520"
+            },
+            "target": {
+              "cell": "d21412f5-5caa-47fe-9637-bc6694796dc9",
+              "port": "bd3bdf64-a6a7-410c-96a3-f22a7a56974c"
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "DF-9 — Structured Query Language \nEncrypted Data",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "7ec9e5fb-b842-45aa-8669-87a1c413492f",
+                  "title": "T-03 Encrypted Vault Data Modification",
+                  "status": "Open",
+                  "severity": "Critical",
+                  "type": "Tampering",
+                  "description": "An attacker deliberately changes individual bits of encrypted password vault information stored in the PostgreSQL database, potentially corrupting the stored data.",
+                  "mitigation": "Use the Extended ChaCha20 stream cipher with Poly1305 message authentication to detect unauthorized modifications to encrypted information.",
+                  "modelType": "default",
+                  "new": false,
+                  "number": 8,
+                  "score": ""
+                },
+                {
+                  "id": "28d9b6a3-1ca2-40e2-aa9a-51ea5a263601",
+                  "title": "T-08 Database and Server Log Information Theft",
+                  "status": "Open",
+                  "severity": "Critical",
+                  "type": "Information disclosure",
+                  "description": "An attacker gains unauthorized access to the PostgreSQL database and server logs, copying stored encrypted vault information and potentially sensitive account metadata.",
+                  "mitigation": "Implement a zero-knowledge security architecture in which vault information is encrypted on the user's device and the server never receives the master password, plaintext vault contents, or decryption keys.",
+                  "modelType": "default",
+                  "new": false,
+                  "number": 13,
+                  "score": ""
+                },
+                {
+                  "id": "4dd965fe-d847-4994-8ddb-e31f842bead0",
+                  "title": "T-15 Unauthorized Access to Another User's Vault",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Elevation of privilege",
+                  "description": "An authenticated attacker manipulates password vault record identifiers to access encrypted information belonging to another user because the server fails to verify record ownership.",
+                  "mitigation": "Use parameterized Structured Query Language statements and enforce server-side ownership verification using the authenticated user's unique identifier for every vault operation.",
+                  "modelType": "default",
+                  "new": false,
+                  "number": 19,
+                  "score": ""
+                }
+              ],
+              "trustBoundaryIds": [
+                "a4807461-cdfb-472a-99c0-da33d61587a6",
+                "54c957e1-2c06-47cc-8776-19fed1ca3997"
+              ]
+            },
+            "labels": [
+              "DF-9 — Structured Query Language \nEncrypted Data"
+            ],
+            "id": "6a6cdfa0-ad1d-4bc2-baec-e276b0a4bfb6",
+            "source": {
+              "cell": "48feb73c-1cf3-47a9-a014-8db758800cbe",
+              "port": "b59eee04-f79f-472f-9fa3-a6a0683a1214"
+            },
+            "target": {
+              "cell": "b4965e3b-0a99-495a-96bb-634d0f8d7509",
+              "port": "9c668e31-6d06-4b94-b0a4-db243fccad6f"
+            },
+            "vertices": [
+              {
+                "x": 960,
+                "y": 240
+              },
+              {
+                "x": 1020,
+                "y": 300
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "DF-5 — Encrypted Vault Items",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "b6562eb2-9f64-4f3d-ae31-ba52b51348c5",
+                  "title": "T-18 Encrypted Password Vault Rollback Attack",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Tampering",
+                  "description": "A compromised server returns an outdated but correctly encrypted version of a user's password vault, potentially restoring old passwords or outdated security settings without the user's knowledge.",
+                  "mitigation": "Include a version number in the Authenticated Encryption with Associated Data metadata and compare it against a trusted version record to detect attempts to restore outdated vault information.",
+                  "modelType": "default",
+                  "new": false,
+                  "number": 22,
+                  "score": ""
+                }
+              ],
+              "trustBoundaryIds": [
+                "a4807461-cdfb-472a-99c0-da33d61587a6",
+                "900300c2-5c8e-4d4f-b76b-fd9d355a1d70"
+              ]
+            },
+            "labels": [
+              "DF-5 — Encrypted Vault Items"
+            ],
+            "id": "849c6ba0-8011-4274-96e9-d247c50a6a53",
+            "source": {
+              "cell": "48feb73c-1cf3-47a9-a014-8db758800cbe",
+              "port": "7a29bd1b-986f-4455-aaee-2dedcfeccee5"
+            },
+            "target": {
+              "cell": "d21412f5-5caa-47fe-9637-bc6694796dc9",
+              "port": "b59eee04-f79f-472f-9fa3-a6a0683a1214"
+            },
+            "vertices": [
+              {
+                "x": 410,
+                "y": 330
+              },
+              {
+                "x": 220,
+                "y": 280
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "DF-12 — Emergency Recovery Envelope",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "22277a77-7089-463b-a706-4b8c39c207db",
+                  "title": "T-04 Emergency Recovery Timer Manipulation",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Tampering",
+                  "description": "A malicious administrator changes the waiting period for emergency account recovery to allow encrypted recovery information to be released earlier than authorized.",
+                  "mitigation": "Use cryptographically signed timestamps and a server-controlled state machine to enforce the correct emergency recovery waiting period.",
+                  "modelType": "default",
+                  "new": false,
+                  "number": 9,
+                  "score": ""
+                },
+                {
+                  "id": "88230fb8-6604-4e9d-a355-c3988f6f2f3e",
+                  "title": "T-06 Denial of Emergency Recovery Activity",
+                  "status": "Open",
+                  "severity": "Low",
+                  "type": "Repudiation",
+                  "description": "An emergency contact performs an account recovery action but later denies having requested or completed that action.",
+                  "mitigation": "Maintain tamper-evident audit logs and use authenticated digital signatures to provide reliable evidence of emergency recovery actions.",
+                  "modelType": "default",
+                  "new": false,
+                  "number": 11,
+                  "score": ""
+                },
+                {
+                  "id": "47ae9cd7-a599-4e97-8b0d-456d46e9d50c",
+                  "title": "T-13 Unauthorized Emergency Recovery Access",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Elevation of privilege",
+                  "description": "An attacker exploits weaknesses in the emergency recovery process to bypass the required waiting period and gain access to recovery information before authorization is granted.",
+                  "mitigation": "Enforce emergency recovery rules on the server using atomic state transitions and database transactions so that recovery requests cannot bypass required authorization checks or waiting periods.",
+                  "modelType": "default",
+                  "new": false,
+                  "number": 18,
+                  "score": ""
+                }
+              ],
+              "trustBoundaryIds": [
+                "a4807461-cdfb-472a-99c0-da33d61587a6"
+              ]
+            },
+            "labels": [
+              "DF-12 — Emergency Recovery Envelope"
+            ],
+            "id": "5ac6b9ca-cf9e-499c-8d30-c721de873a5a",
+            "source": {
+              "cell": "48feb73c-1cf3-47a9-a014-8db758800cbe",
+              "port": "b59eee04-f79f-472f-9fa3-a6a0683a1214"
+            },
+            "target": {
+              "cell": "c657f955-57ac-46a6-ae05-a0f4b94541cf",
+              "port": "f7aac6d3-9a95-4eaa-8c1c-d94c46c56038"
+            },
+            "vertices": [
+              {
+                "x": 890,
+                "y": 580
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "DF-10 — Secure Password Breach Checking",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "754558ca-85a0-48cd-932e-afe6665d9bbb",
+                  "title": "T-09 — Password Hash Disclosure to Have I Been Pwned",
+                  "status": "Open",
+                  "severity": "Critical",
+                  "type": "Information disclosure",
+                  "description": "The browser extension accidentally transmits the complete Secure Hash Algorithm 1 password hash to the Have I Been Pwned service, unnecessarily exposing information about the user's password.",
+                  "mitigation": "Use the Have I Been Pwned range application programming interface with the k-anonymity technique. Send only the first five hexadecimal characters of the password hash and perform the remaining comparison locally on the user's device.",
+                  "modelType": "default",
+                  "new": false,
+                  "number": 14,
+                  "score": ""
+                }
+              ],
+              "trustBoundaryIds": [
+                "25ee9266-1785-4319-8cf9-a7283beba733",
+                "900300c2-5c8e-4d4f-b76b-fd9d355a1d70"
+              ]
+            },
+            "labels": [
+              "DF-10 — Secure Password Breach Checking"
+            ],
+            "id": "f2368e1c-bb83-49d3-96ff-c95c364afa99",
+            "source": {
+              "cell": "d21412f5-5caa-47fe-9637-bc6694796dc9"
+            },
+            "target": {
+              "cell": "1bc54918-eee1-4f52-acd1-bf6c6fe238c2",
+              "port": "f7aac6d3-9a95-4eaa-8c1c-d94c46c56038"
+            },
+            "vertices": [
+              {
+                "x": 490,
+                "y": -120
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "DF-7: Share envelope",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "363a82ea-c1b9-43ad-bcd6-c5f6f5d87492",
+                  "title": "T-05 Denial of Password Sharing Activity",
+                  "status": "Open",
+                  "severity": "Low",
+                  "type": "Repudiation",
+                  "description": "A user shares an encrypted password or vault item with another user but later denies performing the sharing operation.",
+                  "mitigation": "Require users to digitally sign password-sharing transactions and maintain tamper-resistant records of sharing activities.",
+                  "modelType": "default",
+                  "new": false,
+                  "number": 10,
+                  "score": ""
+                }
+              ],
+              "trustBoundaryIds": [
+                "a4807461-cdfb-472a-99c0-da33d61587a6",
+                "900300c2-5c8e-4d4f-b76b-fd9d355a1d70"
+              ]
+            },
+            "labels": [
+              "DF-7: Share envelope"
+            ],
+            "id": "78d6f574-ab07-492c-a378-bcb4f1b6c941",
+            "source": {
+              "cell": "48feb73c-1cf3-47a9-a014-8db758800cbe",
+              "port": "7a29bd1b-986f-4455-aaee-2dedcfeccee5"
+            },
+            "target": {
+              "cell": "d21412f5-5caa-47fe-9637-bc6694796dc9",
+              "port": "3241a265-e38c-4f3c-b846-7199c8d31ee0"
+            },
+            "vertices": [
+              {
+                "x": 640,
+                "y": 250
+              },
+              {
+                "x": 530,
+                "y": 320
+              },
+              {
+                "x": 280,
+                "y": 450
+              },
+              {
+                "x": 190,
+                "y": 320
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "DF-2: OPAQUE registration",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "bc7f054f-5fa9-4cc0-95c1-1d689e88b3ad",
+                  "title": "T-17 Authentication Registration Replay Attack",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Spoofing",
+                  "description": "An attacker captures previously transmitted registration messages and attempts to send them again to the server to impersonate a legitimate registration request or interfere with account creation.",
+                  "mitigation": "Implement server-side replay protection for the OPAQUE registration process, including authenticated registration sessions, prevention of unauthorized registration record replacement, and rejection of duplicate or invalid requests.",
+                  "modelType": "default",
+                  "new": false,
+                  "number": 21,
+                  "score": ""
+                }
+              ],
+              "trustBoundaryIds": [
+                "a4807461-cdfb-472a-99c0-da33d61587a6",
+                "900300c2-5c8e-4d4f-b76b-fd9d355a1d70"
+              ]
+            },
+            "labels": [
+              "DF-2: OPAQUE registration"
+            ],
+            "id": "4de9f299-640b-40ae-b3d4-2e501bc5bdd2",
+            "source": {
+              "cell": "d21412f5-5caa-47fe-9637-bc6694796dc9",
+              "port": "b59eee04-f79f-472f-9fa3-a6a0683a1214"
+            },
+            "target": {
+              "cell": "48feb73c-1cf3-47a9-a014-8db758800cbe",
+              "port": "bd3bdf64-a6a7-410c-96a3-f22a7a56974c"
+            },
+            "vertices": [
+              {
+                "x": 390,
+                "y": 20
+              },
+              {
+                "x": 640,
+                "y": 70
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "DF-8 — Delivered Encrypted \nSharing Envelope",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "73ad1729-f458-44c9-a40b-f6eb542822a1",
+                  "title": "T-16 Modification of Encrypted Sharing Information",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Tampering",
+                  "description": "An attacker intercepts and modifies an encrypted sharing envelope while it is being delivered from the server to the intended recipient, potentially corrupting or manipulating the shared information.",
+                  "mitigation": "Protect the encrypted sharing envelope using Authenticated Encryption with Associated Data and verify its authentication tag before accepting or decrypting the information.",
+                  "modelType": "default",
+                  "new": false,
+                  "number": 20,
+                  "score": ""
+                }
+              ],
+              "trustBoundaryIds": [
+                "a4807461-cdfb-472a-99c0-da33d61587a6",
+                "900300c2-5c8e-4d4f-b76b-fd9d355a1d70"
+              ]
+            },
+            "labels": [
+              "DF-8 — Delivered Encrypted \nSharing Envelope"
+            ],
+            "id": "b0bd0eb2-3d5a-4305-b53c-dd83b68eb322",
+            "source": {
+              "cell": "48feb73c-1cf3-47a9-a014-8db758800cbe",
+              "port": "3241a265-e38c-4f3c-b846-7199c8d31ee0"
+            },
+            "target": {
+              "cell": "d21412f5-5caa-47fe-9637-bc6694796dc9",
+              "port": "3241a265-e38c-4f3c-b846-7199c8d31ee0"
+            },
+            "vertices": [
+              {
+                "x": 650,
+                "y": 380
+              },
+              {
+                "x": 290,
+                "y": 700
+              },
+              {
+                "x": 70,
+                "y": 450
+              },
+              {
+                "x": 50,
+                "y": 330
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "DF-6: X25519 pubkey",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "6644f643-da7f-4345-b777-daad30f05292",
+                  "title": "T-02 Public Key Impersonation",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Spoofing",
+                  "description": "An attacker replaces a legitimate user's Curve25519 public key with a fraudulent key, potentially allowing the attacker to receive encrypted information intended for another user.",
+                  "mitigation": "Use cryptographic digital signatures to verify the authenticity and ownership of public keys before sharing encrypted information.",
+                  "modelType": "default",
+                  "new": false,
+                  "number": 7,
+                  "score": ""
+                }
+              ],
+              "trustBoundaryIds": [
+                "a4807461-cdfb-472a-99c0-da33d61587a6",
+                "900300c2-5c8e-4d4f-b76b-fd9d355a1d70"
+              ]
+            },
+            "labels": [
+              "DF-6: X25519 pubkey"
+            ],
+            "id": "5d284ab1-27e6-4d1c-b90f-b644cb3b850b",
+            "source": {
+              "cell": "48feb73c-1cf3-47a9-a014-8db758800cbe",
+              "port": "3241a265-e38c-4f3c-b846-7199c8d31ee0"
+            },
+            "target": {
+              "cell": "d21412f5-5caa-47fe-9637-bc6694796dc9",
+              "port": "3241a265-e38c-4f3c-b846-7199c8d31ee0"
+            },
+            "vertices": [
+              {
+                "x": 590,
+                "y": 340
+              },
+              {
+                "x": 480,
+                "y": 410
+              },
+              {
+                "x": 230,
+                "y": 530
+              },
+              {
+                "x": 130,
+                "y": 370
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "DF-11 — Encrypted Time-Based \nOne-Time Password Information",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "f2c36fb9-c437-44df-8262-6d776c26f21d",
+                  "title": "T-10 One-Time Password Secret Leakage",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Information disclosure",
+                  "description": "A secret key used to generate time-based one-time authentication passwords is accidentally transmitted or stored without encryption, potentially allowing an attacker to generate valid authentication codes.",
+                  "mitigation": "Encrypt each time-based one-time password secret using its dedicated vault item encryption key before sending it to the server.",
+                  "modelType": "default",
+                  "new": false,
+                  "number": 15,
+                  "score": ""
+                }
+              ],
+              "trustBoundaryIds": [
+                "a4807461-cdfb-472a-99c0-da33d61587a6",
+                "900300c2-5c8e-4d4f-b76b-fd9d355a1d70"
+              ]
+            },
+            "labels": [
+              "DF-11 — Encrypted Time-Based \nOne-Time Password Information"
+            ],
+            "id": "1e297446-3f0e-42a7-b7eb-ea9ba9bec9f4",
+            "source": {
+              "cell": "d21412f5-5caa-47fe-9637-bc6694796dc9",
+              "port": "b59eee04-f79f-472f-9fa3-a6a0683a1214"
+            },
+            "target": {
+              "cell": "48feb73c-1cf3-47a9-a014-8db758800cbe",
+              "port": "7a29bd1b-986f-4455-aaee-2dedcfeccee5"
+            },
+            "vertices": [
+              {
+                "x": 410,
+                "y": 190
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "DF-3 — Login \nusing the \nOPAQUE Authentication Protocol",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "424a45aa-cbf4-4093-9b78-ac335b9184ce",
+                  "title": "T-01 — Man-in-the-Middle Attack",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Spoofing",
+                  "description": "An attacker intercepts communication between the browser extension and the server and attempts to impersonate the legitimate server during the OPAQUE authentication process.",
+                  "mitigation": "Enforce Transport Layer Security version 1.3 and use the OPAQUE password-authenticated key exchange protocol with proper server authentication.",
+                  "modelType": "default",
+                  "new": false,
+                  "number": 6,
+                  "score": ""
+                },
+                {
+                  "id": "f64f3962-7719-436f-b55b-ab1c60b76149",
+                  "title": "T-11 Authentication Service Flooding",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Denial of service",
+                  "description": "An attacker sends an excessive number of authentication requests to the server, consuming computing resources and preventing legitimate users from signing into their accounts.",
+                  "mitigation": "Implement request rate limiting based on users' Internet Protocol addresses and individual accounts, together with request timeouts and resource limits.",
+                  "modelType": "default",
+                  "new": false,
+                  "number": 16,
+                  "score": ""
+                }
+              ],
+              "trustBoundaryIds": [
+                "a4807461-cdfb-472a-99c0-da33d61587a6",
+                "900300c2-5c8e-4d4f-b76b-fd9d355a1d70"
+              ]
+            },
+            "labels": [
+              "DF-3 — Login \nusing the \nOPAQUE Authentication Protocol"
+            ],
+            "id": "6cdf23e9-dece-48e7-a09c-ff12d28fe801",
+            "source": {
+              "cell": "d21412f5-5caa-47fe-9637-bc6694796dc9",
+              "port": "b59eee04-f79f-472f-9fa3-a6a0683a1214"
+            },
+            "target": {
+              "cell": "48feb73c-1cf3-47a9-a014-8db758800cbe",
+              "port": "bd3bdf64-a6a7-410c-96a3-f22a7a56974c"
+            },
+            "vertices": [
+              {
+                "x": 450,
+                "y": 80
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "diagramTop": 1,
+    "reviewer": "Sedoame Kofi Ahorlu",
+    "threatTop": 26
+  }
+}
