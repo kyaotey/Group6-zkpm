@@ -1,0 +1,13 @@
+exercise3.c: In function 'print_uninitialized':
+exercise3.c:14:5: warning: 'uninitialized_var' is used uninitialized [-Wuninitialized]
+   14 |     printf("[exercise3 - BUGGY] Uninitialized variable value: %d\n", uninitialized_var);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+exercise3.c:11:9: note: 'uninitialized_var' was declared here
+   11 |     int uninitialized_var;
+      |         ^~~~~~~~~~~~~~~~~
+C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot find -lasan: No such file or directory
+C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot find -lubsan: No such file or directory
+collect2.exe: error: ld returned 1 exit status
+C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot find -lasan: No such file or directory
+C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot find -lubsan: No such file or directory
+collect2.exe: error: ld returned 1 exit status

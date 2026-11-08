@@ -1,0 +1,9 @@
+[package]
+name = "week3_rust_port"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "rust_port"
+path = "rust_port.rs"
+

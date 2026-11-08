@@ -1,0 +1,34 @@
+====================================================
+       WEEK 3 SANITIZER DRILL - BOUNDARY TESTS       
+====================================================
+
+[TEST 1] Boundary Case: Empty Input (0 characters)
+[exercise1 - FIXED] Safely copied (0 chars): 
+[TEST 1] Passed safely.
+
+[TEST 2] Boundary Case: Maximum Allowed Length (9 characters + '\0' fits 10-byte buffer)
+[exercise1 - FIXED] Safely copied (9 chars): 123456789
+[TEST 2] Passed safely.
+
+[TEST 3] Boundary Case: Maximum Length + 1 (10 characters: triggers overflow on buggy version)
+[exercise1 - FIXED] Truncated (input was 10 chars, safely capped to 9): 123456789
+[TEST 3] Passed safely.
+
+[TEST 4] Boundary Case: Very Large Input (1000 characters)
+[exercise1 - FIXED] Truncated (input was 1000 chars, safely capped to 9): AAAAAAAAA
+[TEST 4] Passed safely.
+
+[TEST 5] Array Access Test: Valid index 2, then Out-of-Bounds index 10
+Accessing valid index 2:
+[exercise2 - FIXED] Valid access at index 2: 30
+Accessing invalid index 10 (triggers sanitizer on buggy version):
+[exercise2 - FIXED] Bounds Error: Requested index 10 is out of bounds [0..4]. Access blocked safely.
+[TEST 5] Completed.
+
+[TEST 6] Uninitialized Memory Test:
+[exercise3 - FIXED] Initialized variable value: 0 (deterministic & safe)
+[TEST 6] Completed.
+
+====================================================
+              ALL SELECTED TESTS COMPLETED          
+====================================================
